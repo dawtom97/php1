@@ -1,0 +1,18 @@
+{
+    "name": "heroku/app",
+    "description": "ww",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Heroku\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ww"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
