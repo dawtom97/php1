@@ -1,4 +1,5 @@
 <?php
+require_once 'vendor/autoload.php'; // Upewnij się, że ścieżka jest poprawna
 
 // Ustawienie zmiennej środowiskowej APP_ENV
 // Można to ustawić w serwisie hostingowym lub w pliku .env
@@ -8,13 +9,15 @@
 use App\Migrations\DatabaseMigration;
 
 $env = getenv('APP_MODE') ?: 'dev'; // Domyślnie ustaw na 'development'
-
+echo $env;
 if ($env === 'prod') {
     $config = require 'config.production.php';
     $migration = new DatabaseMigration();
     $migration->createTasksTable();
 } else {
     $config = require 'config.development.php';
+    $migration = new DatabaseMigration();
+    $migration->createTasksTable();
 }
 
 // Przykładowe użycie
