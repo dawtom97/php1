@@ -10,7 +10,8 @@ class DatabaseMigration
     public function __construct()
     {
         // Wczytanie konfiguracji
-        $config = include '../../config.production.php';
+        $config = include __DIR__ . '/../../config.production.php';
+
 
         // Ustawienia połączenia z bazą danych
         $host = $config['db']['host'];
