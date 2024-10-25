@@ -1,4 +1,7 @@
 <?php
+namespace App\Migrations;
+use PDO;
+use PDOException;
 
 class DatabaseMigration
 {

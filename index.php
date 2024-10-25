@@ -5,6 +5,8 @@
 // pghro pass ef28009502d089f86f2be7e7c4dfd35d
 // pghro username pghero-360cfb31
 
+use App\Migrations\DatabaseMigration;
+
 $env = getenv('APP_MODE') ?: 'dev'; // Domyślnie ustaw na 'development'
 
 if ($env === 'prod') {
