@@ -16,7 +16,7 @@ class DatabaseMigration
         // Ustawienia połączenia z bazą danych
         $host = $config['database']['host'];
         $db = $config['database']['dbname'];
-        $user = $config['database']['user'];
+        $user = $config['database']['username'];
         $pass = $config['database']['password'];
 
         try {
