@@ -9,6 +9,8 @@ $env = getenv('APP_MODE') ?: 'dev'; // Domyślnie ustaw na 'development'
 
 if ($env === 'prod') {
     $config = require 'config.production.php';
+    $migration = new DatabaseMigration();
+    $migration->createTasksTable();
 } else {
     $config = require 'config.development.php';
 }

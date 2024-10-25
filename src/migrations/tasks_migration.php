@@ -64,7 +64,6 @@ class DatabaseMigration
     }
 }
 
-// Użycie klasy do migracji
-$migration = new DatabaseMigration();
-$migration->createTasksTable();
+
+
 
