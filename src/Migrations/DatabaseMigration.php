@@ -14,10 +14,10 @@ class DatabaseMigration
 
 
         // Ustawienia połączenia z bazą danych
-        $host = $config['db']['host'];
-        $db = $config['db']['dbname'];
-        $user = $config['db']['user'];
-        $pass = $config['db']['password'];
+        $host = $config['database']['host'];
+        $db = $config['database']['dbname'];
+        $user = $config['database']['user'];
+        $pass = $config['database']['password'];
 
         try {
             $dsn = "pgsql:host=$host;dbname=$db";
